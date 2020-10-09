@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>AllForComps - Мыши</title>
+		<link rel="stylesheet" href="../styles/main.css">
+		<link rel="stylesheet" href="../styles/header.css">
+		<link rel="stylesheet" href="../styles/body.css">
+		<link rel="stylesheet" href="../styles/footer.css">
+		<link rel="stylesheet" href="../styles/ribbons.css">
+		<script src="../scripts/jquery.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<a href="../index.html"><div class="logo">
+				<img src="../images/logo.png">
+			</div></a>
+			<div class="search">
+				<div class="search-text"><input type="text" placeholder="Поиск по сайту"></div>
+				<div class="search-button"><button><img src="../images/find.png" style="width: 1.5em;"></button></div>
+			</div>
+			<div class="basket" id="cart">
+				<div class="basket-button"><button><img src="../images/cart.png" style="width: 100%; height: 100%;"></button></div>
+			</div>
+			<div class="action_cart" id="action_cart"> 
+				<h1>Корзина</h1>
+				<table class="product">
+					<tbody id="products">
+						<tr id="product1">
+							<td>Ноутбук Lenovo IdeaPad S145-15IWL</td>
+							<td>34990р</td>
+							<td><input type="number" min="0" max="99" value="1">шт.</td>
+						</tr>
+						<tr id="product2">
+							<td>Сумка HAMA Tortuga</td>
+							<td>840р</td>
+							<td><input type="number" min="0" max="99" value="1">шт.</td>
+						</tr>
+					</tbody>
+				</table>
+				<p id="sum">Сумма: 35830р</p>
+				<p><input type="button" value="Оформить заказ!"></p>
+			</div>
+			<div class="basket" id="profile">
+				<div class="basket-button"><button><img src="../images/profile.png" style="width: 100%; height: 100%;"></button></div>
+			</div>
+			<div class="action_profile" id="action_profile"> 
+				<h1>Войти</h1>
+				<input type="text" placeholder="Почта или телефон"><br>
+				<input type="text" placeholder="Пароль"><br>
+				<p><a href="">Забыли пароль?</a>&nbsp;|&nbsp;<input type="button" value="Войти"></p>
+			</div>
+			<div class="menu">
+				<a href="../notebooks.html"><div class="menu_item"><p>Ноутбуки</p></div></a>
+				<a href="../pc.html"><div class="menu_item"><p>Комплектующие ПК</p></div></a>
+				<a href="../peripheral.html"><div class="menu_item selected_page"><p>Периферийные устройства</p></div></a>
+				<a href="../accessories.html"><div class="menu_item"><p>Аксессуары</p></div></a>
+			</div>
+		</header>
+		<div class="body">
+			<div class="path"><a href="../index.html">Главная</a>&nbsp;>&nbsp;<a href="../peripheral.html">Периферийные устройства</a>&nbsp;>&nbsp;Мыши</div>
+			<div class="body_menu">
+				<b>Цена</b>
+				<p>От <input type="text"><br>До <input type="text"></p>
+				<hr>
+
+				<b>Тип</b>
+				<p>
+					<label><input type="checkbox">Мышь</label><br>
+					<label><input type="checkbox">Трекбол</label><br>
+					<label><input type="checkbox">Трекпад</label>
+				</p>
+				<hr>
+
+				<b>Технология</b>
+				<p>
+					<label><input type="checkbox">Лазерная</label><br>
+					<label><input type="checkbox">Оптическая</label>
+				</p>
+				<hr>
+
+				<b>Тип соединения</b>
+				<p>
+					<label><input type="checkbox">Проводная</label><br>
+					<label><input type="checkbox">Беспроводная</label>
+				</p>
+				<hr>
+
+				<b>Тип беспроводного соединения</b>
+				<p>
+					<label><input type="checkbox">Bluetooth</label><br>
+					<label><input type="checkbox">Радиоканал</label>
+				</p>
+				<hr>
+
+				<b>Кнопки ввода</b>
+				<p>
+					<label><input type="checkbox">Кнопка изменения чувствительности</label><br>
+					<label><input type="checkbox">Кнопка двойного клика</label><br>
+					<label><input type="checkbox">Кнопка тройного клика</label>
+				</p>
+				<hr>
+
+				<b>Назначение</b>
+				<p>
+					<label><input type="checkbox">Для ноутбуков</label><br>
+					<label><input type="checkbox">Для геймеров</label><br>
+					<label><input type="checkbox">Универсальная</label>
+				</p>
+				<hr>
+
+				<b>Особенности</b>
+				<p>
+					<label><input type="checkbox">Позолоченный коннектор</label><br>
+					<label><input type="checkbox">Индикатор заряда батареи</label><br>
+					<label><input type="checkbox">Чехол в комплекте</label><br>
+					<label><input type="checkbox">Коврик в комплекте</label><br>
+					<label><input type="checkbox">Сенсорная область</label><br>
+					<label><input type="checkbox">Вертикальная</label><br>
+					<label><input type="checkbox">Бесшумная</label>
+				</p>
+				<hr>
+
+				<b>Дизайн</b>
+				<p>
+					<label><input type="checkbox">Для правой руки</label><br>
+					<label><input type="checkbox">Для левой руки</label><br>
+					<label><input type="checkbox">Универсальная</label>
+				</p>
+				<hr>
+
+				<b>Подключение</b>
+				<p>
+					<label><input type="checkbox">USB</label><br>
+					<label><input type="checkbox">PS/2</label>
+				</p>
+				<hr>
+
+				<b>Аккумуляторы</b>
+				<p>
+					<label><input type="checkbox">АА</label><br>
+					<label><input type="checkbox">ААА</label><br>
+					<label><input type="checkbox">Собственные</label>
+				</p>
+			</div>
+			<div class="range">
+				<div class="grid_item" onclick="window.location.href = 'mouse/STEELSERIES Rival 650.html';">
+					<div class="good_block">
+						<div class="ribbon-wrapper-yellow"><div class="ribbon-yellow">Хит продаж!</div></div>
+						<div class="good_prev"><img src="../images/peripheral/mouse/STEELSERIES Rival 650.jpg"></div>
+						<div class="good">
+						<div class="good_name">STEELSERIES Rival 650</div>
+						<div class="good_desc">тип: оптическая, тип соединения: беспроводная, сенсор: 12000dpi, количество кнопок: 7, колесо прокрутки, регулируемый вес, для геймеров, интерфейс: USB</div>
+						<span class="price">8660р</span><div class="good_buy"><button>Купить</button></div>
+						</div>
+					</div>
+				</div>
+				<div class="grid_item" onclick="window.location.href = 'mouse/OKLICK 295M.html';">
+					<div class="good_block">
+						<div class="ribbon-wrapper-red"><div class="ribbon-red">Акция!</div></div>
+						<div class="good_prev"><img src="../images/peripheral/mouse/OKLICK 295M.jpg"></div>
+						<div class="good">
+						<div class="good_name">OKLICK 295M</div>
+						<div class="good_desc">тип: оптическая, тип соединения: проводная, сенсор: 1000dpi, количество кнопок: 2, колесо прокрутки, интерфейс: USB</div>
+						<span class="price">150р<span class="discount">260р</span></span><div class="good_buy"><button>Купить</button></div>
+						</div>
+					</div>
+				</div>
+				<div class="grid_item" onclick="window.location.href = 'mouse/OKLICK 105S.html';">
+					<div class="good_block">
+						<div class="ribbon-wrapper-green"><div class="ribbon-green">Новинка</div></div>
+						<div class="good_prev"><img src="../images/peripheral/mouse/OKLICK 105S.jpg"></div>
+						<div class="good">
+						<div class="good_name">OKLICK 105S</div>
+						<div class="good_desc">тип: оптическая, тип соединения: проводная, сенсор: 800dpi, количество кнопок: 2, колесо прокрутки, для ноутбуков, интерфейс: USB</div>
+						<span class="price">170р</span><div class="good_buy"><button>Купить</button></div>
+						</div>
+					</div>
+				</div>
+				<div class="grid_item" onclick="window.location.href = 'mouse/OKLICK 305M.html';">
+					<div class="good_block">
+						<div class="good_prev"><img src="../images/peripheral/mouse/OKLICK 305M.jpg"></div>
+						<div class="good">
+						<div class="good_name">OKLICK 305M</div>
+						<div class="good_desc">тип: оптическая, тип соединения: проводная, сенсор: 1000dpi, количество кнопок: 2, колесо прокрутки, интерфейс: USB</div>
+						<span class="price">200р</span><div class="good_buy"><button>Купить</button></div>
+						</div>
+					</div>
+				</div>
+				<div class="grid_item" onclick="window.location.href = 'mouse/OKLICK 115S.html';">
+					<div class="good_block">
+						<div class="good_prev"><img src="../images/peripheral/mouse/OKLICK 115S.jpg"></div>
+						<div class="good">
+						<div class="good_name">OKLICK 115S</div>
+						<div class="good_desc">тип: оптическая, тип соединения: проводная, сенсор: 1200dpi, количество кнопок: 2, колесо прокрутки, для ноутбуков, интерфейс: USB</div>
+						<span class="price">200р</span><div class="good_buy"><button>Купить</button></div>
+						</div>
+					</div>
+				</div>
+				<div class="grid_item" onclick="window.location.href = 'mouse/LOGITECH M705.html';">
+					<div class="good_block">
+						<div class="good_prev"><img src="../images/peripheral/mouse/LOGITECH M705.jpg"></div>
+						<div class="good">
+						<div class="good_name">LOGITECH M705</div>
+						<div class="good_desc">тип: лазерная, тип соединения: беспроводная, сенсор: 1000dpi, количество кнопок: 5, колесо прокрутки, для ноутбуков, интерфейс: USB 1.1</div>
+						<span class="price">2990р</span><div class="good_buy"><button>Купить</button></div>
+						</div>
+					</div>
+				</div>
+				<!--
+				<div class="grid_item" onclick="window.location.href = 'mouse/.html';">
+					<div class="good_block">
+						<div class="ribbon-wrapper-red"><div class="ribbon-red">Акция!</div></div>
+						<div class="ribbon-wrapper-yellow"><div class="ribbon-yellow">Хит продаж!</div></div>
+						<div class="ribbon-wrapper-green"><div class="ribbon-green">Новинка</div></div>
+						<div class="good_prev"><img src="../images/peripheral/mouse/.jpg"></div>
+						<div class="good">
+						<div class="good_name"></div>
+						<div class="good_desc"></div>
+						<span class="price">р</span><div class="good_buy"><button>Купить</button></div>
+						</div>
+					</div>
+				</div>
+				-->
+			</div>
+		</div>
+		<footer>
+			<table style="width: 90%;">
+				<tbody>
+					<tr>
+						<td>
+							<a href="../map.html">Карта сайта</a><br>
+							<a href="../warranty.html">Гарантия и обслуживание</a><br>
+							<a href="../privacy.html">Политика безопасности</a><br>
+							<a href="../license.html">Пользовательское соглашение</a><br>
+							<a href="../contact.html">Контактная информация</a><br>
+							© 2019 allforcomps.ru. Все права защищены.
+						</td>
+						<td>
+							<p><span class="bigger">8-495-258-76-60</span><br>
+							<span class="footnote">звонок оплачивается согласно тарифу Вашего оператора</span></p>
+							<p><span class="bigger">8-800-100-76-60</span><br>
+							<span class="footnote">круглосуточная бесплатная линия</span></p>
+							feedback@allforcomps.ru<br><br>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</footer>
+		<script src="../scripts/script.js"></script>
+	</body>
+</html>

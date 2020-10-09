@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>AllForComps - Сумка HAMA Tortuga</title>
+		<link rel="stylesheet" href="../../styles/main.css">
+		<link rel="stylesheet" href="../../styles/header.css">
+		<link rel="stylesheet" href="../../styles/body.css">
+		<link rel="stylesheet" href="../../styles/footer.css">
+		<link rel="stylesheet" href="../../styles/ribbons.css">
+		<link rel="stylesheet" href="../../styles/slider.css">
+		<script src="../../scripts/jquery.min.js"></script>
+		<style>
+			header {
+				margin-top: 0px;
+			}
+			.body {
+				display: block;
+			}
+			.main {
+				width: calc(100% - 100px);
+			}
+			td {
+				vertical-align: top;
+			}
+			.body_menu {
+				height: 50%;
+				display: block;
+				margin-top: 114px;
+				position: relative;
+			}
+			.good_buy {
+				margin-top: 0.75em;
+				padding: 0.5em;
+				display: inline-block;
+			}
+			.good_buy button {
+				width: 100%;
+			}
+			#block-for-slider {
+			    width: 700px;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<a href="../../index.html"><div class="logo">
+				<img src="../../images/logo.png">
+			</div></a>
+			<div class="search">
+				<div class="search-text"><input type="text" placeholder="Поиск по сайту"></div>
+				<div class="search-button"><button><img src="../../images/find.png" style="width: 1.5em;"></button></div>
+			</div>
+			<div class="basket" id="cart">
+				<div class="basket-button"><button><img src="../../images/cart.png" style="width: 100%; height: 100%;"></button></div>
+			</div>
+			<div class="action_cart" id="action_cart"> 
+				<h1>Корзина</h1>
+				<table class="product">
+					<tbody id="products">
+						<tr id="product1">
+							<td>Ноутбук Lenovo IdeaPad S145-15IWL</td>
+							<td>34990р</td>
+							<td><input type="number" min="0" max="99" value="1">шт.</td>
+						</tr>
+						<tr id="product2">
+							<td>Сумка HAMA Tortuga</td>
+							<td>840р</td>
+							<td><input type="number" min="0" max="99" value="1">шт.</td>
+						</tr>
+					</tbody>
+				</table>
+				<p id="sum">Сумма: 35830р</p>
+				<p><input type="button" value="Оформить заказ!"></p>
+			</div>
+			<div class="basket" id="profile">
+				<div class="basket-button"><button><img src="../../images/profile.png" style="width: 100%; height: 100%;"></button></div>
+			</div>
+			<div class="action_profile" id="action_profile"> 
+				<h1>Войти</h1>
+				<input type="text" placeholder="Почта или телефон"><br>
+				<input type="text" placeholder="Пароль"><br>
+				<p><a href="">Забыли пароль?</a>&nbsp;|&nbsp;<input type="button" value="Войти"></p>
+			</div>
+			<div class="menu">
+				<a href="../../notebooks.html"><div class="menu_item"><p>Ноутбуки</p></div></a>
+				<a href="../../pc.html"><div class="menu_item"><p>Комплектующие ПК</p></div></a>
+				<a href="../../peripheral.html"><div class="menu_item"><p>Периферийные устройства</p></div></a>
+				<a href="../../accessories.html"><div class="menu_item selected_page"><p>Аксессуары</p></div></a>
+			</div>
+		</header>
+		<table>
+			<tr>
+				<td>
+					<div class="body">
+						<div class="path"><a href="../../index.html">Главная</a>&nbsp;>&nbsp;<a href="../../accessories.html">Аксессуары</a>&nbsp;>&nbsp;<a href="../bag.html">Сумки для ноутбуков</a>&nbsp;>&nbsp;HAMA Tortuga</div>
+						<div class="main">
+							<h1>HAMA Tortuga</h1>
+							<h2>Легкая и стильная сумка весом 292 грамма. Вмещает в себя ноутбук с экраном 15,6 и несколько аксессуаров. Обладает удобными ручками и плечевым ремнем.</h2>
+							<div class="tabs">
+								<div id="tab1" class="tab selected_tab" onclick="document.getElementById('page1').style.display = 'block';
+																				 document.getElementById('tab1').className = 'tab selected_tab';
+																	 			 document.getElementById('page2').style.display = 'none';
+																				 document.getElementById('tab2').className = 'tab';
+																				 document.getElementById('page3').style.display = 'none';
+																				 document.getElementById('tab3').className = 'tab';">Характеристики</div>
+								<div id="tab2" class="tab" onclick="document.getElementById('page1').style.display = 'none';
+																	document.getElementById('tab1').className = 'tab';
+																	document.getElementById('page2').style.display = 'block';
+																	document.getElementById('tab2').className = 'tab selected_tab';
+																	document.getElementById('page3').style.display = 'none';
+																	document.getElementById('tab3').className = 'tab';">Обзоры</div>
+								<div id="tab3" class="tab" onclick="document.getElementById('page1').style.display = 'none';
+																	document.getElementById('tab1').className = 'tab';
+																	document.getElementById('page2').style.display = 'none';
+																	document.getElementById('tab2').className = 'tab';
+																	document.getElementById('page3').style.display = 'block';
+																	document.getElementById('tab3').className = 'tab selected_tab';">Отзывы</div>
+							</div>
+							<div class="content">
+								<div class="page1" id="page1">
+									<div id="block-for-slider">
+								        <div id="viewport">
+								            <ul id="slidewrapper">
+								                <li class="slide"><img src="HAMA Tortuga/1.jpg" alt="1" class="slide-img"></li>
+								                <li class="slide"><img src="HAMA Tortuga/2.jpg" alt="2" class="slide-img"></li>
+								                <li class="slide"><img src="HAMA Tortuga/3.jpg" alt="3" class="slide-img"></li>
+								            </ul>
+								            <div id="prev-next-btns">
+								                <div id="prev-btn"><img src="../../images/slide_right.png"></div>
+								                <div id="next-btn"><img src="../../images/slide_left.png"></div>
+								            </div>
+								            <ul id="nav-btns">
+								                <li class="slide-nav-btn"></li>
+								                <li class="slide-nav-btn"></li>
+								                <li class="slide-nav-btn"></li>
+								            </ul>
+								        </div>
+								    </div>
+								    <script src="../../scripts/slider.js"></script>
+									<table class="product_features">
+										<tbody>
+			                                <tr><th><span class="property_name">Описание</span></th>							<td>Легкая и стильная сумка весом 292 грамма. Вмещает в себя ноутбук с экраном 15,6 и несколько аксессуаров. Обладает удобными ручками и плечевым ремнем.</td></tr>
+			                                <tr><th><span class="property_name">Диагональ ноутбука в дюймах</span></th>			<td>до 15.6"</td></tr>
+			                                <tr><th><span class="property_name">Размеры</span></th>								<td>43 х 34 х 6 см</td></tr>
+			                                <tr><th><span class="property_name">Размер основного отделения (ШхГхВ)</span></th>	<td>38.5 х 28.5 х 4 см</td></tr>
+			                                <tr><th><span class="property_name">Ручка для переноски</span></th>					<td>есть</td></tr>
+			                                <tr><th><span class="property_name">Плечевой ремень</span></th>						<td>Не съемный</td></tr>
+			                                <tr><th><span class="property_name">Наружные карманы</span></th>					<td>1</td></tr>
+			                                <tr><th><span class="property_name">Основной материал</span></th>					<td>Полиэстер</td></tr>
+			                                <tr><th><span class="property_name">Цвет</span></th>								<td>Черный</td></tr>
+			                                <tr><th><span class="property_name">Гарантия</span></th>							<td>12 мес.</td></tr>
+			                                <tr><th><span class="property_name">Сайт производителя</span></th>					<td>www.hama.de</td></tr>
+			                                <tr><th><span class="property_name">Страна производитель</span></th>				<td>Китай</td></tr>
+			                            </tbody>
+			                        </table>
+			                        <span class="h3">Описание HAMA Tortuga</span>
+									<div>
+										<p>Легкая и стильная сумка весом 292 грамма. Вмещает в себя ноутбук с экраном 15,6 и несколько аксессуаров. Обладает удобными ручками и плечевым ремнем.</p>
+									</div>
+								</div>
+								<div class="page2" id="page2">
+									<h1>Извините, обзора на данный товар пока нет</h1>
+								</div>
+								<div class="page3" id="page3">
+									<h1>Отзывы пользователей</h1>
+									<div class="user_review">
+										<div class="author">Soulca</div>
+										<div class="ratings">
+						                    <span class="">&#9733;&nbsp;</span>
+						                    <span class="">&#9733;&nbsp;</span>
+						                    <span class="">&#9733;&nbsp;</span>
+						                    <span class="selected">&#9733;&nbsp;</span>
+						                    <span class="selected">&#9733;&nbsp;</span>
+										</div>
+										<h3>Достоинства</h3>
+										<p>влезает свободно 15,6 дюймовый ноут</p>
+										<h3>Недостатки</h3>
+										<p>Тонкая, слабая.<br>
+Сразу сломался один бегунок-замок, хорошо что их два было.<br>
+Дополнительный карман на одной маленькой липучке, если положить мышку и зарядник, то все оттопыривается и можно потерять мышку, особенно если она беспроводная и мелкая.</p>
+										<h3>Комментарий</h3>
+										<p>Думал что возьму чуть дороже чем самые дешевые в наличие и она будет получше, оказалось не было смысла, переплатил. Сумка тонкая и ненадежная.<br>
+Второй раз бы не взял.</p>
+									</div>
+									<div class="user_review">
+										<div class="author">Иван</div>
+										<div class="ratings">
+						                    <span class="selected">&#9733;&nbsp;</span>
+						                    <span class="selected">&#9733;&nbsp;</span>
+						                    <span class="selected">&#9733;&nbsp;</span>
+						                    <span class="selected">&#9733;&nbsp;</span>
+						                    <span class="selected">&#9733;&nbsp;</span>
+										</div>
+										<h3>Достоинства</h3>
+										<p>Влез игровой ноутбук Acer Aspire 715 и блок питания<br>430 рублей</p>
+										<h3>Недостатки</h3>
+										<p>Карман на липучке<br>Нельзя снять ремень<br>Ручки вшиты в сумку</p>
+										<h3>Комментарий</h3>
+										<p>За приемлемую цену мы получаем неплохую сумку для ноутбука. Но рекомендую для дорогих ноутов сумку подороже и качественней.</p>
+									</div>
+									<div class="user_review">
+										<div class="author">henrih43</div>
+										<div class="ratings">
+						                    <span class="selected">&#9733;&nbsp;</span>
+						                    <span class="selected">&#9733;&nbsp;</span>
+						                    <span class="selected">&#9733;&nbsp;</span>
+						                    <span class="selected">&#9733;&nbsp;</span>
+						                    <span class="selected">&#9733;&nbsp;</span>
+										</div>
+										<h3>Достоинства</h3>
+										<p>100%!!!</p>
+										<h3>Недостатки</h3>
+										<p>Их нету!!!</p>
+										<h3>Комментарий</h3>
+										<p>Отличная сумка влезает все ноутбук 16.0",документы,книга,телефон,перчатки!!!</p>
+									</div>
+									<div class="user_review">
+										<div class="author">Иван</div>
+										<div class="ratings">
+						                    <span class="">&#9733;&nbsp;</span>
+						                    <span class="">&#9733;&nbsp;</span>
+						                    <span class="selected">&#9733;&nbsp;</span>
+						                    <span class="selected">&#9733;&nbsp;</span>
+						                    <span class="selected">&#9733;&nbsp;</span>
+										</div>
+										<h3>Достоинства</h3>
+										<p>Цена</p>
+										<h3>Недостатки</h3>
+										<p>Внешний карман на хилой липучке, как уже писали выше оттопыривается и отстегивается стоит туда положить что-то толще мышки. Заярдку там не поносишь.</p>
+										<h3>Комментарий</h3>
+										<p>В целом не советую.</p>
+									</div>
+									<div class="user_review">
+										<div class="author">Елена</div>
+										<div class="ratings">
+						                    <span class="">&#9733;&nbsp;</span>
+						                    <span class="">&#9733;&nbsp;</span>
+						                    <span class="selected">&#9733;&nbsp;</span>
+						                    <span class="selected">&#9733;&nbsp;</span>
+						                    <span class="selected">&#9733;&nbsp;</span>
+										</div>
+										<h3>Достоинства</h3>
+										<p>Тонкая и легкая, цена. Ноут Acer ES1-571 влез с запасом, по высоте еще достаточно много осталось свободных сантиметров.</p>
+										<h3>Недостатки</h3>
+										<p>Очень хлипенькие ручки на самой сумке. А наплечный ремень даже не рискну использовать :)<br>
+Внешний карман на липучке</p>
+										<h3>Комментарий</h3>
+										<p>Сумка нужна была для однократной перевозки ноута — он потом будет использоваться в качестве стационарного. Ну и иногда будет убираться в сумку на хранение. Поэтому цель была купить сумку по минимальной цене, не тяжелую. Для такой задачи очень даже подойдет.<br>
+Если для более частого использования — то слишком уж хлипкая.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div class="body_menu">
+							<div class="ribbon-wrapper-yellow"><div class="ribbon-yellow">Хит продаж!</div></div>
+							<div class="ratings">
+			                    <span class="">&#9733;&nbsp;</span>
+			                    <span class="selected">&#9733;&nbsp;</span>
+			                    <span class="selected">&#9733;&nbsp;</span>
+			                    <span class="selected">&#9733;&nbsp;</span>
+			                    <span class="selected">&#9733;&nbsp;</span>
+			                </div><br>
+							<span class="price">440р</span><div class="good_buy"><button>Купить</button></div>
+							<!--<div class="good_buy"><button style="display: inline-block; margin-left: 0px;">Купить 34990р</button>-->
+							<hr>
+
+							<h2>Защита покупки</h2>
+							<label><input type="checkbox">&nbsp;Защита от негарантийных случаев</label><br>
+							<label><input type="checkbox">&nbsp;Продление гарантии</label>
+							<hr>
+
+                            <h2>Наличие сейчас в <span style="color: orange" id="city">Челябинске</span></h2>
+                            <table>
+                            	<tbody>
+                            		<tr>
+                            			<td>много</td>
+                            			<td>&nbsp;-&nbsp;</td>
+                            			<td>ТК Радуга</td>
+                            		</tr>
+                            		<tr>
+                            			<td>нет</td>
+                            			<td>&nbsp;-&nbsp;</td>
+                            			<td>ТРЦ Фокус</td>
+                            		</tr>
+                            		<tr>
+                            			<td>1 шт.</td>
+                            			<td>&nbsp;-&nbsp;</td>
+                            			<td>ТЦ КС</td>
+                            		</tr>
+                            		<tr>
+                            			<td>нет</td>
+                            			<td>&nbsp;-&nbsp;</td>
+                            			<td>в пути (1-2 дня)</td>
+                            		</tr>
+                            		<tr>
+                            			<td>нет</td>
+                            			<td>&nbsp;-&nbsp;</td>
+                            			<td>Копейск</td>
+                            		</tr>
+                            		<tr>
+                            			<td>много</td>
+                            			<td>&nbsp;-&nbsp;</td>
+                            			<td>склад (1-4 дня)</td>
+                            		</tr>
+                            		<tr>
+                            			<td>много</td>
+                            			<td>&nbsp;-&nbsp;</td>
+                            			<td>удалённый склад (4-7 дней)</td>
+                            		</tr>
+                            	</tbody>
+                            </table>
+                            <hr>
+
+                            <h2>Способы получения</h2>
+                            <ul>
+                            	<li>Самовывоз с 9 ноября</li>
+                            	<li>Доставка до дома с 10 ноября за 190р</li>
+                            </ul>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<footer>
+			<table style="width: 90%;">
+				<tbody>
+					<tr>
+						<td>
+							<a href="../../map.html">Карта сайта</a><br>
+							<a href="../../warranty.html">Гарантия и обслуживание</a><br>
+							<a href="../../privacy.html">Политика безопасности</a><br>
+							<a href="../../license.html">Пользовательское соглашение</a><br>
+							<a href="../../contact.html">Контактная информация</a><br>
+							© 2019 allforcomps.ru. Все права защищены.
+						</td>
+						<td>
+							<p><span class="bigger">8-495-258-76-60</span><br>
+							<span class="footnote">звонок оплачивается согласно тарифу Вашего оператора</span></p>
+							<p><span class="bigger">8-800-100-76-60</span><br>
+							<span class="footnote">круглосуточная бесплатная линия</span></p>
+							feedback@allforcomps.ru<br><br>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</footer>
+		<div class="city_action" id="city_action">
+			<h2>Ваш город - Челябинск?</h2>
+			<input type="button" value="Да" onclick="$('#city_action').attr('style', 'display: none;');"><input type="text" placeholder="Нет, уточнить город">
+			<div class="city_container">
+				<ul>
+					<li>Абакан</li><li>Азов</li><li>Александров</li><li>Алексин</li><li>Альметьевск</li><li>Анапа</li><li>Ангарск</li><li>Анжеро-Судженск</li><li>Апатиты</li><li>Арзамас</li><li>Армавир</li><li>Арсеньев</li><li>Артем</li><li>Архангельск</li><li>Асбест</li><li>Астрахань</li><li>Ачинск</li><li>Балаково</li><li>Балахна</li><li>Балашиха</li><li>Балашов</li><li>Барнаул</li><li>Батайск</li><li>Белгород</li><li>Бор</li><li>Борисоглебск</li><li>Боровичи</li><li>Братск</li><li>Брянск</li><li>Бугульма</li><li>Буденновск</li><li>Бузулук</li><li>Буйнакск</li><li>Великие Луки</li><li>Великий Новгород</li><li>Верхняя Пышма</li><li>Видное</li><li>Владивосток</li><li>Владикавказ</li><li>Владимир</li><li>Волгоград</li><li>Волгодонск</li><li>Волжск</li><li>Волжский</li><li>Вологда</li><li>Вольск</li><li>Воркута</li><li>Воронеж</li><li>Воскресенск</li><li>Воткинск</li><li>Всеволожск</li><li>Выборг</li><li>Выкса</li><li>Вязьма</li><li>Гатчина</li><li>Геленджик</li><li>Георгиевск</li><li>Глазов</li><li>Горно-Алтайск</li><li>Грозный</li><li>Губкин</li><li>Гудермес</li><li>Гуково</li><li>Гусь-Хрустальный</li><li>Дербент</li><li>Дзержинск</li><li>Димитровград</li><li>Дмитров</li><li>Долгопрудный</li><li>Домодедово</li><li>Донской</li><li>Дубна</li><li>Евпатория</li><li>Егорьевск</li><li>Ейск</li><li>Екатеринбург</li><li>Елабуга</li><li>Елец</li><li>Ессентуки</li><li>Жигулевск</li><li>Жуковский</li><li>Заречный</li><li>Зеленогорск</li><li>Зеленодольск</li><li>Златоуст</li><li>Иваново</li><li>Ивантеевка</li><li>Ижевск</li><li>Избербаш</li><li>Иркутск</li><li>Йошкар-Ола</li><li>Казань</li><li>Калининград</li><li>Калуга</li><li>Каменск-Уральский</li><li>Каменск-Шахтинский</li><li>Камышин</li><li>Канск</li><li>Каспийск</li><li>Кемерово</li><li>Керчь</li><li>Клинцы</li><li>Ковров</li><li>Когалым</li><li>Коломна</li><li>Комсомольск-на-Амуре</li><li>Копейск</li><li>Королев</li><li>Кострома</li><li>Котлас</li><li>Красногорск</li><li>Краснодар</li><li>Краснокаменск</li><li>Краснокамск</li><li>Краснотурьинск</li><li>Красноярск</li><li>Кропоткин</li><li>Крымск</li><li>Кстово</li><li>Кузнецк</li><li>Кумертау</li><li>Кунгур</li><li>Курган</li><li>Курск</li><li>Кызыл</li><li>Лабинск</li><li>Лениногорск</li><li>Ленинск-Кузнецкий</li><li>Лесосибирск</li><li>Липецк</li><li>Лиски</li><li>Лобня</li><li>Лысьва</li><li>Лыткарино</li><li>Люберцы</li><li>Магадан</li><li>Магнитогорск</li><li>Майкоп</li><li>Махачкала</li><li>Междуреченск</li><li>Мелеуз</li><li>Миасс</li><li>Минеральные Воды</li><li>Мичуринск</li><li>Москва</li><li>Мурманск</li><li>Муром</li><li>Мытищи</li><li>Набережные Челны</li><li>Назарово</li><li>Назрань</li><li>Нальчик</li><li>Норильск</li><li>Ноябрьск</li><li>Нягань</li><li>Обнинск</li><li>Одинцово</li><li>Октябрьский</li><li>Омск</li><li>Орел</li><li>Оренбург</li><li>Орехово-Зуево</li><li>Орск</li><li>Павлово</li><li>Павловский Посад</li><li>Пенза</li><li>Первоуральск</li><li>Пермь</li><li>Петрозаводск</li><li>Петропавловск-Камчатский</li><li>Подольск</li><li>Полевской</li><li>Прокопьевск</li><li>Прохладный</li><li>Псков</li><li>Пушкино</li><li>Пятигорск</li><li>Раменское</li><li>Ревда</li><li>Реутов</li><li>Ржев</li><li>Рославль</li><li>Россошь</li><li>Ростов-на-Дону</li><li>Рубцовск</li><li>Рыбинск</li><li>Рязань</li><li>Салават</li><li>Сальск</li><li>Самара</li><li>Санкт-Петербург</li><li>Саранск</li><li>Сарапул</li><li>Сибай</li><li>Симферополь</li><li>Смоленск</li><li>Соликамск</li><li>Солнечногорск</li><li>Сосновый Бор</li><li>Сочи</li><li>Ставрополь</li><li>Старый Оскол</li><li>Стерлитамак</li><li>Ступино</li><li>Сургут</li><li>Сызрань</li><li>Сыктывкар</li><li>Таганрог</li><li>Тамбов</li><li>Тверь</li><li>Тимашевск</li><li>Тихвин</li><li>Тихорецк</li><li>Тобольск</li><li>Тольятти</li><li>Томск</li><li>Троицк</li><li>Туапсе</li><li>Туймазы</li><li>Тула</li><li>Тюмень</li><li>Узловая</li><li>Улан-Удэ</li><li>Ульяновск</li><li>Уссурийск</li><li>Усть-Илимск</li><li>Уфа</li><li>Ухта</li><li>Феодосия</li><li>Фрязино</li><li>Хабаровск</li><li>Ханты-Мансийск</li><li>Хасавюрт</li><li>Химки</li><li>Чита</li><li>Челябинск</li><li>Шадринск</li><li>Шали</li><li>Шахты</li><li>Шуя</li><li>Щекино</li><li>Щелково</li><li>Юрга</li><li>Якутск</li><li>Ялта</li><li>Ярославль</li>
+				</ul>
+			</div>
+		</div>
+		<script src="../../scripts/script.js"></script>
+	</body>
+</html>

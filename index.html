@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>AllForComps - Главная</title>
+		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="styles/header.css">
+		<link rel="stylesheet" href="styles/body.css">
+		<link rel="stylesheet" href="styles/footer.css">
+		<link rel="stylesheet" href="styles/ribbons.css">
+		<link rel="stylesheet" href="styles/slider.css">
+		<script src="scripts/jquery.min.js"></script>
+		<style>
+		.body {
+			padding: 0px 3%;
+		}
+		.range {
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			width: calc(100%);
+			margin-left: 0px;
+		}
+		</style>
+	</head>
+	<body>
+		<header>
+			<a href="index.html"><div class="logo">
+				<img src="images/logo.png">
+			</div></a>
+			<div class="search">
+				<div class="search-text"><input type="text" placeholder="Поиск по сайту"></div>
+				<div class="search-button"><button><img src="images/find.png" style="width: 1.5em;"></button></div>
+			</div>
+			<div class="basket" id="cart">
+				<div class="basket-button"><button><img src="images/cart.png" style="width: 100%; height: 100%;"></button></div>
+			</div>
+			<div class="action_cart" id="action_cart"> 
+				<h1>Корзина</h1>
+				<table class="product">
+					<tbody id="products">
+						<tr id="product1">
+							<td>Ноутбук Lenovo IdeaPad S145-15IWL</td>
+							<td>34990р</td>
+							<td><input type="number" min="0" max="99" value="1">шт.</td>
+						</tr>
+						<tr id="product2">
+							<td>Сумка HAMA Tortuga</td>
+							<td>840р</td>
+							<td><input type="number" min="0" max="99" value="1">шт.</td>
+						</tr>
+					</tbody>
+				</table>
+				<p id="sum">Сумма: 35830р</p>
+				<p><input type="button" value="Оформить заказ!"></p>
+			</div>
+			<div class="basket" id="profile">
+				<div class="basket-button"><button><img src="images/profile.png" style="width: 100%; height: 100%;"></button></div>
+			</div>
+			<div class="action_profile" id="action_profile"> 
+				<h1>Войти</h1>
+				<input type="text" placeholder="Почта или телефон"><br>
+				<input type="text" placeholder="Пароль"><br>
+				<p><a href="">Забыли пароль?</a>&nbsp;|&nbsp;<input type="button" value="Войти"></p>
+			</div>
+			<div class="menu">
+				<a href="notebooks.html"><div class="menu_item"><p>Ноутбуки</p></div></a>
+				<a href="pc.html"><div class="menu_item"><p>Комплектующие ПК</p></div></a>
+				<a href="peripheral.html"><div class="menu_item"><p>Периферийные устройства</p></div></a>
+				<a href="accessories.html"><div class="menu_item"><p>Аксессуары</p></div></a>
+			</div>
+		</header>
+		<div class="body">
+			<div>
+				<div id="block-for-slider" style="margin: 0px auto;">
+				    <div id="viewport">
+				        <ul id="slidewrapper">
+				            <li class="slide"><img src="images/discount_acer_aspire.jpg" alt="1" class="slide-img"></li>
+				            <li class="slide"><img src="images/discount_asus.jpg" alt="2" class="slide-img"></li>
+				            <li class="slide"><img src="images/hp_pavilion.jpg" alt="3" class="slide-img"></li>
+				            <li class="slide"><img src="images/hp_printers1.jpg" alt="4" class="slide-img"></li>
+				            <li class="slide"><img src="images/hp_printers2.jpg" alt="5" class="slide-img"></li>
+				            <li class="slide"><img src="images/stock1.jpg" alt="6" class="slide-img"></li>
+				        </ul>
+				    	<div id="prev-next-btns">
+						    <div id="prev-btn"><img src="images/slide_right.png"></div>
+				    	    <div id="next-btn"><img src="images/slide_left.png"></div>
+					    </div>
+					    <ul id="nav-btns">
+					        <li class="slide-nav-btn"></li>
+					        <li class="slide-nav-btn"></li>
+					        <li class="slide-nav-btn"></li>
+					        <li class="slide-nav-btn"></li>
+					        <li class="slide-nav-btn"></li>
+					        <li class="slide-nav-btn"></li>
+					    </ul>
+					</div>
+				</div>
+				<script src="scripts/slider.js"></script>
+			</div>
+			<h1>Хиты продаж</h1>
+			<div class="range">
+				<div class="grid_item" onclick="window.location.href = 'notebooks/Lenovo IdeaPad S145-15IWL.html';">
+					<div class="good_block">
+						<div class="good_prev"><img src="images/notebooks/Lenovo IdeaPad S145-15IWL.jpg"></div>
+						<div class="good">
+						<div class="good_name">Lenovo IdeaPad S145-15IWL </div>
+						<div class="good_desc">15.6", Intel Core i5 8265U 1.6ГГц, 8Гб, 1000Гб, Intel UHD Graphics 620, Free DOS, 81MV00SNRK, серый</div>
+						<span class="price">34990р</span><div class="good_buy"><button>Купить</button></div>
+						</div>
+					</div>
+				</div>
+				<div class="grid_item" onclick="window.location.href = 'pc/motherboard/ASUS A68HM-K.html';">
+					<div class="good_block">
+						<div class="good_prev"><img src="images/pc/motherboard/ASUS A68HM-K.jpg"></div>
+						<div class="good">
+						<div class="good_name">ASUS A68HM-K</div>
+						<div class="good_desc">гнездо процессора: Socket FM2+; чипсет AMD A68H; память DDR3 — 2слота; частотой до 2133МГц; SATA RAID, тип поставки: Ret; mATX</div>
+						<span class="price">2870р</span><div class="good_buy"><button>Купить</button></div>
+						</div>
+					</div>
+				</div>
+				<div class="grid_item" onclick="window.location.href = 'peripheral/mouse/STEELSERIES Rival 650.html';">
+					<div class="good_block">
+						<div class="good_prev"><img src="images/peripheral/mouse/STEELSERIES Rival 650.jpg"></div>
+						<div class="good">
+						<div class="good_name">STEELSERIES Rival 650</div>
+						<div class="good_desc">тип: оптическая, тип соединения: беспроводная, сенсор: 12000dpi, количество кнопок: 7, колесо прокрутки, регулируемый вес, для геймеров, интерфейс: USB</div>
+						<span class="price">8660р</span><div class="good_buy"><button>Купить</button></div>
+						</div>
+					</div>
+				</div>
+				<div class="grid_item" onclick="window.location.href = 'accessories/bag/HAMA Tortuga.html';">
+					<div class="good_block">
+						<div class="good_prev"><img src="images/accessories/bag/HAMA Tortuga.jpg"></div>
+						<div class="good">
+						<div class="good_name">HAMA Tortuga</div>
+						<div class="good_desc">Легкая и стильная сумка весом 292 грамма. Вмещает в себя ноутбук с экраном 15,6 и несколько аксессуаров. Обладает удобными ручками и плечевым ремнем.</div>
+						<span class="price">440р</span><div class="good_buy"><button>Купить</button></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h1>Новинки</h1>
+			<div class="range">
+				<div class="grid_item" onclick="window.location.href = 'notebooks/';">
+					<div class="good_block">
+						<div class="good_prev"><img src="images/notebooks/LENOVO IdeaPad 330-15AST.jpg"></div>
+						<div class="good">
+						<div class="good_name">LENOVO IdeaPad 330-15AST</div>
+						<div class="good_desc">15.6", AMD A4 9125 2.3ГГц, 4Гб, 500Гб, AMD Radeon R3, Free DOS, 81D6004JRU, черный</div>
+						<span class="price">16990р</span><div class="good_buy"><button>Купить</button></div>
+						</div>
+					</div>
+				</div>
+				<div class="grid_item" onclick="window.location.href = 'pc/motherboard/GIGABYTE GA-F2A68HM-S1.html';">
+					<div class="good_block">
+						<div class="good_prev"><img src="images/pc/motherboard/GIGABYTE GA-F2A68HM-S1.jpg"></div>
+						<div class="good">
+						<div class="good_name">GIGABYTE GA-F2A68HM-S1</div>
+						<div class="good_desc">гнездо процессора: Socket FM2+; чипсет AMD A68H; память DDR3 — 2 слота, частотой до 2133МГц; SATA RAID, тип поставки: Ret; mATX</div>
+						<span class="price">2890р</span><div class="good_buy"><button>Купить</button></div>
+						</div>
+					</div>
+				</div>
+				<div class="grid_item" onclick="window.location.href = 'peripheral/mouse/OKLICK 105S.html';">
+					<div class="good_block">
+						<div class="good_prev"><img src="images/peripheral/mouse/OKLICK 105S.jpg"></div>
+						<div class="good">
+						<div class="good_name">OKLICK 105S</div>
+						<div class="good_desc">тип: оптическая, тип соединения: проводная, сенсор: 800dpi, количество кнопок: 2, колесо прокрутки, для ноутбуков, интерфейс: USB</div>
+						<span class="price">170р</span><div class="good_buy"><button>Купить</button></div>
+						</div>
+					</div>
+				</div>
+				<div class="grid_item" onclick="window.location.href = 'accessories/bag/PC PET HQ Classic.html';">
+					<div class="good_block">
+						<div class="good_prev"><img src="images/accessories/bag/PC PET HQ Classic.jpg"></div>
+						<div class="good">
+						<div class="good_name">PC PET HQ Classic</div>
+						<div class="good_desc">Сверхтонкая и легкая сумка для ноутбуков с экраном 15,6 дюйма. Основное отделение и передний карман закрываются на молнию. Внутри сумка выделана мягким материалом, под которой находится особый наполнитель, который предохраняет устройство от повреждений.</div>
+						<span class="price">550р</span><div class="good_buy"><button>Купить</button></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h1>Акция</h1>
+			<div class="range">
+				<div class="grid_item" onclick="window.location.href = 'notebooks/LENOVO IdeaPad 530S-14IKB.html';">
+					<div class="good_block">
+						<div class="good_prev"><img src="images/notebooks/LENOVO IdeaPad 530S-14IKB.jpg"></div>
+						<div class="good">
+						<div class="good_name">LENOVO IdeaPad 530S-14IKB</div>
+						<div class="good_desc">14", IPS, Intel Core i7 8550U 1.8ГГц, 8Гб, 256Гб SSD, Intel UHD Graphics 620, Free DOS, 81EU00MPRU, серый</div>
+						<span class="price">34590р<span class="discount" style="font-size: 0.7em;">39990р</span></span><div class="good_buy"><button>Купить</button></div>
+						</div>
+					</div>
+				</div>
+				<div class="grid_item" onclick="window.location.href = 'notebooks/LENOVO IdeaPad L340-15IWL.html';">
+					<div class="good_block">
+						<div class="good_prev"><img src="images/notebooks/LENOVO IdeaPad L340-15IWL.jpg"></div>
+						<div class="good">
+						<div class="good_name">LENOVO IdeaPad L340-15IWL</div>
+						<div class="good_desc">15.6", Intel Celeron 4205U 1.8ГГц, 4Гб, 128Гб SSD, Intel UHD Graphics 610, noOS, 81LG00MJRK, черный</div>
+						<span class="price">16990р<span class="discount" style="font-size: 0.7em;">24990р</span></span><div class="good_buy"><button>Купить</button></div>
+						</div>
+					</div>
+				</div>
+				<div class="grid_item" onclick="window.location.href = 'notebooks/HP 15-rb012ur.html';">
+					<div class="good_block">
+						<div class="good_prev"><img src="images/notebooks/HP 15-rb012ur.jpg"></div>
+						<div class="good">
+						<div class="good_name">HP 15-rb012ur</div>
+						<div class="good_desc">15.6", AMD E2 9000e 1.5ГГц, 4Гб, 500Гб, AMD Radeon R2, Windows 10, 3LH12EA, черный</div>
+						<span class="price">14990р<span class="discount" style="font-size: 0.7em;">19990р</span></span><div class="good_buy"><button>Купить</button></div>
+						</div>
+					</div>
+				</div>
+				<div class="grid_item" onclick="window.location.href = 'peripheral/mouse/OKLICK 295M.html';">
+					<div class="good_block">
+						<div class="good_prev"><img src="images/peripheral/mouse/OKLICK 295M.jpg"></div>
+						<div class="good">
+						<div class="good_name">OKLICK 295M</div>
+						<div class="good_desc">тип: оптическая, тип соединения: проводная, сенсор: 1000dpi, количество кнопок: 2, колесо прокрутки, интерфейс: USB</div>
+						<span class="price">150р<span class="discount" style="font-size: 0.7em;">260р</span></span><div class="good_buy"><button>Купить</button></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<table style="width: 90%;">
+				<tbody>
+					<tr>
+						<td>
+							<a href="map.html">Карта сайта</a><br>
+							<a href="warranty.html">Гарантия и обслуживание</a><br>
+							<a href="privacy.html">Политика безопасности</a><br>
+							<a href="license.html">Пользовательское соглашение</a><br>
+							<a href="contact.html">Контактная информация</a><br>
+							© 2019 allforcomps.ru. Все права защищены.
+						</td>
+						<td>
+							<p><span class="bigger">8-495-258-76-60</span><br>
+							<span class="footnote">звонок оплачивается согласно тарифу Вашего оператора</span></p>
+							<p><span class="bigger">8-800-100-76-60</span><br>
+							<span class="footnote">круглосуточная бесплатная линия</span></p>
+							feedback@allforcomps.ru<br><br>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</footer>
+		<script src="scripts/script.js"></script>
+	</body>
+</html>

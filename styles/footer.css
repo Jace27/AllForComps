@@ -1,0 +1,26 @@
+footer {
+	/*column-count: 2;
+	column-gap: 50px;
+	column-width: 150px;
+	column-rule: 0px solid white;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 50px;
+	-webkit-column-width: 150px;
+	-webkit-column-rule: 0px solid white;
+	-moz-column-count: 2;
+	-moz-column-gap: 50px;
+	-moz-column-width: 150px;
+	-moz-column-rule: 0px solid white;*/
+	background-color: rgb(100, 100, 100);
+	padding: 1em;
+	max-height: 300px;
+	min-height: 300px;
+	color: white;
+	text-decoration: none;
+}
+footer .footnote {
+	color: rgba(200, 200, 200, 1.0) !important;
+}
+footer a {
+	color: white;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>AllForComps - Видеокарты</title>
+		<link rel="stylesheet" href="../styles/main.css">
+		<link rel="stylesheet" href="../styles/header.css">
+		<link rel="stylesheet" href="../styles/body.css">
+		<link rel="stylesheet" href="../styles/footer.css">
+		<script src="../scripts/jquery.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<a href="../index.html"><div class="logo">
+				<img src="../images/logo.png">
+			</div></a>
+			<div class="search">
+				<div class="search-text"><input type="text" placeholder="Поиск по сайту"></div>
+				<div class="search-button"><button><img src="../images/find.png" style="width: 1.5em;"></button></div>
+			</div>
+			<div class="basket" id="cart">
+				<div class="basket-button"><button><img src="../images/cart.png" style="width: 100%; height: 100%;"></button></div>
+			</div>
+			<div class="action_cart" id="action_cart"> 
+				<h1>Корзина</h1>
+				<table class="product">
+					<tbody id="products">
+						<tr id="product1">
+							<td>Ноутбук Lenovo IdeaPad S145-15IWL</td>
+							<td>34990р</td>
+							<td><input type="number" min="0" max="99" value="1">шт.</td>
+						</tr>
+						<tr id="product2">
+							<td>Сумка HAMA Tortuga</td>
+							<td>840р</td>
+							<td><input type="number" min="0" max="99" value="1">шт.</td>
+						</tr>
+					</tbody>
+				</table>
+				<p id="sum">Сумма: 35830р</p>
+				<p><input type="button" value="Оформить заказ!"></p>
+			</div>
+			<div class="basket" id="profile">
+				<div class="basket-button"><button><img src="../images/profile.png" style="width: 100%; height: 100%;"></button></div>
+			</div>
+			<div class="action_profile" id="action_profile"> 
+				<h1>Войти</h1>
+				<input type="text" placeholder="Почта или телефон"><br>
+				<input type="text" placeholder="Пароль"><br>
+				<p><a href="">Забыли пароль?</a>&nbsp;|&nbsp;<input type="button" value="Войти"></p>
+			</div>
+			<div class="menu">
+				<a href="../notebooks.html"><div class="menu_item"><p>Ноутбуки</p></div></a>
+				<a href="../pc.html"><div class="menu_item selected_page"><p>Комплектующие ПК</p></div></a>
+				<a href="../peripheral.html"><div class="menu_item"><p>Периферийные устройства</p></div></a>
+				<a href="../accessories.html"><div class="menu_item"><p>Аксессуары</p></div></a>
+			</div>
+		</header>
+		<div class="body">
+			<div class="path"><a href="../index.html">Главная</a>&nbsp;>&nbsp;<a href="../pc.html">Комплектующие ПК</a>&nbsp;>&nbsp;</div>
+		</div>
+		<footer>
+			<table style="width: 90%;">
+				<tbody>
+					<tr>
+						<td>
+							<a href="../map.html">Карта сайта</a><br>
+							<a href="../warranty.html">Гарантия и обслуживание</a><br>
+							<a href="../privacy.html">Политика безопасности</a><br>
+							<a href="../license.html">Пользовательское соглашение</a><br>
+							<a href="../contact.html">Контактная информация</a><br>
+							© 2019 allforcomps.ru. Все права защищены.
+						</td>
+						<td>
+							<p><span class="bigger">8-495-258-76-60</span><br>
+							<span class="footnote">звонок оплачивается согласно тарифу Вашего оператора</span></p>
+							<p><span class="bigger">8-800-100-76-60</span><br>
+							<span class="footnote">круглосуточная бесплатная линия</span></p>
+							feedback@allforcomps.ru<br><br>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</footer>
+		<script src="../scripts/script.js"></script>
+	</body>
+</html>

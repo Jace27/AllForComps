@@ -1,0 +1,64 @@
+@font-face {
+	font-family: Ubuntu;
+	font-style: normal;
+	font-weight: normal;
+	src: url(fonts/ubuntu/Ubuntu-Regular.ttf);
+}
+@font-face {
+	font-family: Ubuntu;
+	font-style: italic;
+	font-weight: normal;
+	src: url(fonts/ubuntu/Ubuntu-Italic.ttf);
+}
+@font-face {
+	font-family: Ubuntu;
+	font-style: normal;
+	font-weight: bold;
+	src: url(fonts/ubuntu/Ubuntu-Bold.ttf);
+}
+@font-face {
+	font-family: Ubuntu;
+	font-style: italic;
+	font-weight: bold;
+	src: url(fonts/ubuntu/Ubuntu-BoldItalic.ttf);
+}
+@font-face {
+	font-family: Digital Counter;
+	font-style: italic;
+	font-weight: bold;
+	src: url(fonts/digital_counter.ttf);
+}
+html {
+	font-family: ubuntu;
+	margin: 0px;
+	background-image: url(../images/background.jpg);
+	background-size: 100%;
+	background-attachment: fixed;
+	height: 100%;
+}
+body {
+	margin: 0px;
+	background-color: rgba(255,255,255,0.4);
+	height: calc(100%);
+	/*min-width: 1280px;*/
+}
+/*body table {
+	max-width: 100%;
+}*/
+.body {
+	margin-top: 105px;
+}
+.footnote {
+	font-size: 0.75em;
+	color: gray;
+}
+.bigger {
+	font-size: 1.25em;
+	font-weight: bold;
+}
+img {
+	max-width: calc(100% - 2px);
+}
+table td {
+	vertical-align: top;
+}
